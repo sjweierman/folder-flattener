@@ -185,16 +185,24 @@ public class FlattenerGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
   private boolean flatten(File curr) {
-    if (!targetDirectory.canWrite()) {
+    if (!curr.canWrite()) {
       JOptionPane.showMessageDialog(this,
-              "You do not have write permissions for that directory.");
+              "You do not have write permissions for " 
+              + curr.getAbsolutePath());
       return false;
     } else {
+      boolean successful = true;
       File[] files = curr.listFiles();
       for (File file : files) {
         if (file.isDirectory()) {
-          flatten(file);
-          file.delete();
+          if (!flatten(file))
+            successful=false;
+          if (!file.delete()) {
+            JOptionPane.showMessageDialog(this,
+              "Unable to delete directory " + file.getAbsolutePath());
+            successful = false;
+          }
+            
         } else if (!curr.equals(targetDirectory)) {
           File tFile = new File(targetDirectory, file.getName());
           if (tFile.exists()) {
@@ -204,10 +212,14 @@ public class FlattenerGUI extends javax.swing.JFrame {
                     file.getName());
             tFile = new File(targetDirectory, newFileName);
           }
-          file.renameTo(tFile);
+          if (!file.renameTo(tFile)) {
+            JOptionPane.showMessageDialog(this,
+              "Unable to move file " + file.getAbsolutePath());
+            successful = false;
+          }
         }
       }
-      return true;
+      return successful;
     }
   }
 

@@ -19,7 +19,7 @@ import javax.swing.UIManager;
 
 /**
  *
- * @author sjw
+ * @author Stephen J. Sarma-Weierman
  */
 public class Main {
 
@@ -30,7 +30,7 @@ public class Main {
     try {
       UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
     } catch (Exception e) {
-      //I don't care if this happens. :-P
+      //Do nothing
     }
         FlattenerGUI gui = new FlattenerGUI();
         gui.setVisible(true);

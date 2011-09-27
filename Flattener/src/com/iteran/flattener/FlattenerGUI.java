@@ -53,10 +53,10 @@ public class FlattenerGUI extends javax.swing.JFrame {
         browseButton = new javax.swing.JButton();
         flattenButton = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        jFileMenu = new javax.swing.JMenu();
+        jQuitMenuItem = new javax.swing.JMenuItem();
+        jHelpMenu = new javax.swing.JMenu();
+        jAboutMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -76,31 +76,31 @@ public class FlattenerGUI extends javax.swing.JFrame {
             }
         });
 
-        jMenu1.setText("File");
+        jFileMenu.setText("File");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setText("Quit");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jQuitMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        jQuitMenuItem.setText("Quit");
+        jQuitMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jQuitMenuItemActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jFileMenu.add(jQuitMenuItem);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jFileMenu);
 
-        jMenu2.setText("Help");
+        jHelpMenu.setText("Help");
 
-        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
-        jMenuItem2.setText("About");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jAboutMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F1, 0));
+        jAboutMenuItem.setText("About");
+        jAboutMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jAboutMenuItemActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem2);
+        jHelpMenu.add(jAboutMenuItem);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(jHelpMenu);
 
         setJMenuBar(jMenuBar1);
 
@@ -174,15 +174,15 @@ public class FlattenerGUI extends javax.swing.JFrame {
       }
     }//GEN-LAST:event_flattenButtonActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jQuitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jQuitMenuItemActionPerformed
       System.exit(0);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jQuitMenuItemActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jAboutMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jAboutMenuItemActionPerformed
       AboutDialog about = AboutDialog.getInstance();
       about.setLocationRelativeTo(this);
       about.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jAboutMenuItemActionPerformed
 
   private boolean flatten(File curr) {
     if (!curr.canWrite()) {
@@ -262,11 +262,11 @@ public class FlattenerGUI extends javax.swing.JFrame {
     private javax.swing.JButton browseButton;
     private javax.swing.JTextField directoryField;
     private javax.swing.JButton flattenButton;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuItem jAboutMenuItem;
+    private javax.swing.JMenu jFileMenu;
+    private javax.swing.JMenu jHelpMenu;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jQuitMenuItem;
     private javax.swing.JLabel label;
     // End of variables declaration//GEN-END:variables
 }

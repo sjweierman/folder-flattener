@@ -27,11 +27,11 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    try {
-      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-    } catch (Exception e) {
-      //Do nothing
-    }
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception e) {
+            //Do nothing
+        }
         FlattenerGUI gui = new FlattenerGUI();
         gui.setVisible(true);
     }

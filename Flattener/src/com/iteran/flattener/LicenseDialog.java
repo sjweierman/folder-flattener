@@ -33,7 +33,6 @@ public class LicenseDialog extends javax.swing.JFrame {
     /** Creates new form LicenseDialog */
     private LicenseDialog() {
         initComponents();
-        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     }
     
     public static LicenseDialog getInstance() {
@@ -55,8 +54,6 @@ public class LicenseDialog extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTextArea1.setColumns(20);
         jTextArea1.setEditable(false);

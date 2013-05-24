@@ -33,7 +33,6 @@ public class AboutDialog extends javax.swing.JFrame {
     /** Creates new form AboutDialog */
     private AboutDialog() {
         initComponents();
-        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     }
     
     public static AboutDialog getInstance() {
@@ -55,14 +54,11 @@ public class AboutDialog extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 24));
+        jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 24)); // NOI18N
         jLabel1.setText("Folder Flattener");
 
         jLabel2.setText("version 0.1.0");
@@ -98,7 +94,6 @@ public class AboutDialog extends javax.swing.JFrame {
                         .addComponent(jButton2))
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel5)
                     .addComponent(jLabel4)
                     .addComponent(jLabel6))
                 .addContainerGap(53, Short.MAX_VALUE))
@@ -114,9 +109,7 @@ public class AboutDialog extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jButton2))
@@ -177,7 +170,6 @@ public class AboutDialog extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }

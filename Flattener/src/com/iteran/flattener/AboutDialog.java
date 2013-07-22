@@ -61,7 +61,7 @@ public class AboutDialog extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel1.setText("Folder Flattener");
 
-        jLabel2.setText("version 0.1.0");
+        jLabel2.setText("version 0.5.0");
 
         jLabel4.setText("Stephen J. Sarma-Weierman <stephenjw@gmail.com>");
 

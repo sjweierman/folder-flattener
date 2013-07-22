@@ -23,7 +23,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="0" pref="608" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="0" pref="672" max="32767" attributes="0"/>
                   <Component id="jButton1" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -34,7 +34,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="314" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="331" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -52,10 +52,10 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="jTextArea1">
           <Properties>
-            <Property name="columns" type="int" value="20"/>
             <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Folder Flattener&#xa;Copyright (C) 2011 Stephen J. Sarma-Weierman&#xa;&#xa;This program is free software; you can redistribute it and/or&#xa;modify it under the terms of the GNU General Public License&#xa;as published by the Free Software Foundation; either version 2&#xa;of the License, or (at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#xa;GNU General Public License for more details.&#xa;&#xa;You should have received a copy of the GNU General Public License&#xa;along with this program; if not, write to the Free Software&#xa;Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."/>
+            <Property name="text" type="java.lang.String" value="Folder Flattener&#xa;Copyright (C) 2011-2013 Stephen J. Sarma-Weierman&#xa;&#xa;This program is free software; you can redistribute it and/or&#xa;modify it under the terms of the GNU General Public License&#xa;as published by the Free Software Foundation; either version 2&#xa;of the License, or (at your option) any later version.&#xa;&#xa;This program is distributed in the hope that it will be useful,&#xa;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xa;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#xa;GNU General Public License for more details.&#xa;&#xa;You should have received a copy of the GNU General Public License&#xa;along with this program; if not, write to the Free Software&#xa;Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA."/>
           </Properties>
         </Component>
       </SubComponents>

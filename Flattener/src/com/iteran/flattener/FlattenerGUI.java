@@ -1,6 +1,6 @@
 /* 
  * Graphical User Interface for Folder Flattener.
- * (c)2011 Stephen J. Sarma-Weierman
+ * (c)2011-2013 Stephen J. Sarma-Weierman
  * www.iteran.com
  * 
  * This program is free software; you can redistribute it and/or

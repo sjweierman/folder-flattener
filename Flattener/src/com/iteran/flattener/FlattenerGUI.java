@@ -204,6 +204,8 @@ public class FlattenerGUI extends javax.swing.JFrame {
             successful = false;
           }
             
+        } else if (file.getName().equals("desktop.ini")) {
+          file.delete();
         } else if (!curr.equals(targetDirectory)) {
           File tFile = new File(targetDirectory, file.getName());
           if (tFile.exists()) {
